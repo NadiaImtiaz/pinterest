@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Search</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+  .logo{
+            width: 30px;
+            height: 30px;
+          }
+
+          .icons{
+            width: 25px;
+            height: 25px;
+          }
+    
+          .profile-pic{
+            height: 150px;
+            width: 150px;
+            
+          }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light pt-3 sticky-top">
+    <div class="container-fluid nav-container">
+      <img src="./img/download.png" alt="brand_logo" class="logo rounded-pill img-fluid object-fit-cover mx-3">
+      <a href="./index.html"><button type="button" class="btn btn-dark rounded-5 me-2">Home</button></a>
+      <a href="./single-page.html" class="btn btn-light rounded-5 me-3">Create</a>
+      <a href="./profile.html" class="btn btn-light rounded-5 me-3">Profile</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="input-group rounded-5">
+          <span class="input-group-text bg-secondary-subtle rounded-start-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search text-secondary"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </span>
+          <input type="text" class="form-control bg-secondary-subtle rounded-end-5 me-4" aria-label="Amount (to the nearest dollar)" placeholder="Search for">
+          <img src="./img/notification.jpg" alt="" class="icons img-fluid object-fit-cover me-4">
+          <img src="./img/message.jpg" alt="" class="icons img-fluid object-fit-cover me-4">
+          <!-- <img src="./img/message.jpg" alt="" class="icons img-fluid object-fit-cover me-4"> -->
+          <!-- <img src="./img/arrow_16396455.png" alt="" class="icons img-fluid object-fit-cover me-4"> -->
+        </div>
+      </div>
+    </div>
+</nav>
+ 
+  <style>
+
+    /* USAGE -> The caption text will be displayed on mouseover.
+    Please use a unique caption text for each image ID    
+    */
+      
+    .wall_img_1 {width:100%;height:600px;margin:40px auto; transition: all .2s ease-in-out;} 
+    .wall_img_2 {width:100%;height:400px;margin:20px auto; transition: all .2s ease-in-out;} 
+    .wall_img_1:hover,.wall_img_2:hover{filter: grayscale(80%)}
+    .wall_img_1:before,.wall_img_2:before {content: attr(id);opacity:0;transition: all .2s ease-in-out;width:100%;position:absolute;top:40%;text-align:center;display:block;font-size:22px;color:#fff; mix-blend-mode: overlay;}
+    .wall_img_1:hover::before,.wall_img_2:hover::before {content: attr(id);opacity:1;}
+    
+    </style>
+    
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row ">
+            <div class="col-sm-6">
+              <div class="lc-block">
+                <div lc-helper="background" class="wall_img_1 rounded" style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1518965377251-de929fb61f2b?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80');" id="The Photo Title">
+                </div>
+                <div lc-helper="background" class="wall_img_1 rounded" style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1532932371123-928bc0091ec0?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=635&amp;q=80');" id="landscape 2">
+                </div>
+              </div>
+              <!-- /lc-block -->
+            </div>
+            <div class="col-sm-6">
+              <div class="lc-block ">
+                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1564661392417-bb629e9c6519?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1002&amp;q=80');" id="My title goes here">
+                </div>
+              </div>
+              <div class="lc-block ">
+                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1500703067148-d33a221a8603?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80');" id="This is my landscape">
+                </div>
+              </div>
+              <div class="lc-block ">
+                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1462678522506-09a896e3d33f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80');" id="landscape 3">
+                </div>
+              </div>
+              <!-- /lc-block -->
+            </div>
+          </div>
+          <!-- /lc-block -->
+        </div><!-- /col -->
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="lc-block">
+                <div lc-helper="background" class="wall_img_1 rounded" style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1545221858-0c888a4f9058?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80');" id="My photo">
+                </div>
+              </div>
+              <div class="lc-block ">
+                <div lc-helper="background" class="wall_img_1 rounded" style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1569764760476-5e1f2eb09c42?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=675&amp;q=80');" id="landscape 5">
+                </div>
+              </div>
+              <!-- /lc-block -->
+            </div>
+            <div class="col-sm-6">
+              <div class="lc-block ">
+                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1566380351847-6703d9e86886?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80');" id="landscape 8">
+                </div>
+              </div>
+              <div class="lc-block ">
+                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1436377991866-f9af228d2b47?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80');" id="landscape 11">
+                </div>
+              </div>
+              <div class="lc-block ">
+                <div lc-helper="background" class="wall_img_2 rounded" style="background-size: cover; background-position: center; background-image: url('https://images.unsplash.com/photo-1560390984-5b636c4cb1de?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=792&amp;q=80');" id="landscape 10">
+                </div>
+              </div>
+              <!-- /lc-block -->
+            </div>
+          </div>
+          <!-- /lc-block -->
+        </div><!-- /col -->
+    
+      </div><!-- /col -->
+    </div>
+     
+     
+      
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
